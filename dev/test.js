@@ -1,16 +1,16 @@
 const Blockchain= require('./blockchain');
 
 const bitcoin = new Blockchain();
-// bitcoin.createNewBlock(234234,'sdfgsdfgdff','eeeeghfhdhdfhdfdf');
-// bitcoin.createNewTransaction(100,'sdfgsdfgdsfsdssdffsf','wwwwghfhdhdfhdfdf');
-// //mining a new block or creating a new block
-// bitcoin.createNewBlock(1231231,'dfgdfgdfsdfg','fdgdfgeeeeghfh');
-// //creating another set of transactions after the above block has been mined
-// bitcoin.createNewTransaction(102,'sdfgdsfsdssdffsf','wwdhdfhdfdf');
-// bitcoin.createNewTransaction(104,'fsdssdffsf','fhdhdfhdfdf');
-// bitcoin.createNewTransaction(106,'gdsfsdssdffsf','gtregtregdfdf');
+bitcoin.createNewBlock(234234,'sdfgsdfgdff','eeeeghfhdhdfhdfdf');
+bitcoin.createNewTransaction(100,'sdfgsdfgdsfsdssdffsf','wwwwghfhdhdfhdfdf');
 //mining a new block or creating a new block
-// bitcoin.createNewBlock(44231,'dfdfsdfg','fdgeghfh');
+bitcoin.createNewBlock(1231231,'dfgdfgdfsdfg','fdgdfgeeeeghfh');
+//creating another set of transactions after the above block has been mined
+bitcoin.createNewTransaction(102,'sdfgdsfsdssdffsf','wwdhdfhdfdf');
+bitcoin.createNewTransaction(104,'fsdssdffsf','fhdhdfhdfdf');
+bitcoin.createNewTransaction(106,'gdsfsdssdffsf','gtregtregdfdf');
+//mining a new block or creating a new block
+bitcoin.createNewBlock(44231,'dfdfsdfg','fdgeghfh');
 
 
 //hashing test
@@ -34,4 +34,4 @@ const currentBlockData = [
 ];
 const nonce=100;
 console.log(bitcoin.hashBlock(previousBlockHash,currentBlockData,nonce));
-// console.log(bitcoin.chain[1]);
+// // console.log(bitcoin.chain[1]);
